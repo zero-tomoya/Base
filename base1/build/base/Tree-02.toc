@@ -1,0 +1,6 @@
+('resources',
+ 'resources',
+ [],
+ 'DATA',
+ [('resources\\ifs.ico', 'resources\\ifs.ico', 'DATA'),
+  ('resources\\url.DAT', 'resources\\url.DAT', 'DATA')])
