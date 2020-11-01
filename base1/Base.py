@@ -1,20 +1,24 @@
 
 import tkinter
 import copy
-from tkinter import ttk
 import sys,pickle
-import threading
 from tkinter import messagebox
+from tkinter import ttk
 import os
 import webbrowser
 import traceback
 import tkinter.font as tkFont
-
+import configparser
 # this Softwere Defalut browser is keyword search 
 
 print('')
 print(' simple Base browser　Ver 1.5')
-
+# 文字色の指定
+cor="Black"
+if os.path.isfile("./default.conf")==True:
+    config = configparser.ConfigParser()
+    config.read('./default.conf')
+    cor=config['SECTION1'].get('color')
 try:
 
     def resourcePath(filename):
@@ -50,9 +54,10 @@ try:
 
     root = tkinter.Tk()
     root.resizable(False, False)
+    root['bg'] = 'grey'
     root.iconbitmap(default=resourcePath("resources/ifs.ico"))
-    Static1 = tkinter.Label(text=u' ')
-    Static4 = tkinter.Label(text=u' ')
+    Static1 = tkinter.Label(text=u' ', background='grey')
+    Static4 = tkinter.Label(text=u' ', background='grey')
 
     root.title(u"Simple Base browser")
     root.geometry("400x350")
@@ -62,18 +67,18 @@ try:
     Static1.pack()
     Static1.pack()
 
-    lbl1 = tkinter.Label(text='Simple Base browser', font=fontStyle)
+    lbl1 = tkinter.Label(text='Simple Base browser',foreground=cor, font=fontStyle,background="grey")
     lbl1.pack()
 
-    Static2 = tkinter.Label(text=u' ')
+    Static2 = tkinter.Label(text=u' ',background='grey')
     Static2.pack()
 
 # ラベルの生成
-    lbl = tkinter.Label(text='検索キーワード')
+    lbl = tkinter.Label(text='検索キーワード',foreground=cor,background="grey")
     lbl.pack()
     txt = tkinter.Entry(width=20)
     txt.pack()
-    Static4 = tkinter.Label(text=u' ')
+    Static4 = tkinter.Label(text=u' ', background='grey')
     Static4.pack()
 
 # 検索ボタンの生成
@@ -81,10 +86,12 @@ try:
     Button5.bind("<Button-1>",vf)
     Button5.pack()
 
-    Static5 = tkinter.Label(text=u' ')
+    Static5 = tkinter.Label(text=u' ', background='grey')
     Static5.pack()
+#background
 
-    Static6 = tkinter.Label(text=u'モード切替')
+#foreground
+    Static6 = tkinter.Label(text=u'モード切替',foreground=cor,background="grey")
     Static6.pack()
 
 # コンボボックスの生成
@@ -93,7 +100,7 @@ try:
     combo.current(0)
     combo.pack()
 
-    Static7 = tkinter.Label(text=u' ')
+    Static7 = tkinter.Label(text=u' ', background='grey')
     Static7.pack()
 
     Button3 = tkinter.Button(text=u'閉じる',font=("",10))

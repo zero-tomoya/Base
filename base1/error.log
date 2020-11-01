@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 105, in <module>
+    root.mainloop()
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 29, in exitf
+    sys.exit(1)
+SystemExit: 1
+Traceback (most recent call last):
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 105, in <module>
+    root.mainloop()
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 29, in exitf
+    sys.exit(1)
+SystemExit: 1
+Traceback (most recent call last):
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 105, in <module>
+    root.mainloop()
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 29, in exitf
+    sys.exit(1)
+SystemExit: 1
+Traceback (most recent call last):
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 105, in <module>
+    root.mainloop()
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 29, in exitf
+    sys.exit(1)
+SystemExit: 1
+Traceback (most recent call last):
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 68, in <module>
+    lbl1 = tkinter.Label(text='Simple Base browser',foreground=cor, font=fontStyle,background="grey")
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 3145, in __init__
+    Widget.__init__(self, master, 'label', cnf, kw)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 2569, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown color name ""black""
+Traceback (most recent call last):
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 68, in <module>
+    lbl1 = tkinter.Label(text='Simple Base browser',foreground=cor, font=fontStyle,background="grey")
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 3145, in __init__
+    Widget.__init__(self, master, 'label', cnf, kw)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 2569, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown color name ""black""
+Traceback (most recent call last):
+  File "C:\Users\t_koga\Desktop\Base\base1\Base.py", line 96, in <module>
+    combo = ttk.Combobox(root, state='readonly')
+NameError: name 'ttk' is not defined

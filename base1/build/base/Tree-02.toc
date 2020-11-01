@@ -2,5 +2,6 @@
  'resources',
  [],
  'DATA',
- [('resources\\ifs.ico', 'resources\\ifs.ico', 'DATA'),
+ [('resources\\Back.jpg', 'resources\\Back.jpg', 'DATA'),
+  ('resources\\ifs.ico', 'resources\\ifs.ico', 'DATA'),
   ('resources\\url.DAT', 'resources\\url.DAT', 'DATA')])
