@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "Base.py", line 109, in <module>
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "Base.py", line 33, in exitf
+SystemExit: 1
+Traceback (most recent call last):
+  File "Base.py", line 109, in <module>
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "Base.py", line 33, in exitf
+SystemExit: 1
+Traceback (most recent call last):
+  File "Base.py", line 109, in <module>
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "Base.py", line 33, in exitf
+SystemExit: 1
+Traceback (most recent call last):
+  File "Base.py", line 109, in <module>
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\t_koga\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1885, in __call__
+    return self.func(*args)
+  File "Base.py", line 33, in exitf
+SystemExit: 1

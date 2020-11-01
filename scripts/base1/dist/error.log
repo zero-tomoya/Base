@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "Base.py", line 109, in <module>
+  File "tkinter\__init__.py", line 1422, in mainloop
+  File "tkinter\__init__.py", line 1885, in __call__
+  File "Base.py", line 33, in exitf
+SystemExit: 1
+Traceback (most recent call last):
+  File "Base.py", line 109, in <module>
+  File "tkinter\__init__.py", line 1422, in mainloop
+  File "tkinter\__init__.py", line 1885, in __call__
+  File "Base.py", line 33, in exitf
+SystemExit: 1
+Traceback (most recent call last):
+  File "Base.py", line 109, in <module>
+  File "tkinter\__init__.py", line 1422, in mainloop
+  File "tkinter\__init__.py", line 1885, in __call__
+  File "Base.py", line 33, in exitf
+SystemExit: 1
