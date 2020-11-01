@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['Base.py'],
-             pathex=['C:\\Users\\t_koga\\Desktop\\base'],
+             pathex=['C:\\Users\\t_koga\\Desktop\\Base\\base1'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -31,4 +31,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False , icon='ifs.ico')
+          console=False )
