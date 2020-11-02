@@ -11,6 +11,7 @@ import traceback
 import threading
 import tkinter.font as tkFont
 import configparser
+
 # this Softwere Defalut browser is keyword search 
 
 s=0
@@ -59,7 +60,11 @@ try:
             else:
                 web="https://"+txt.get()
         webbrowser.open_new(web)
-        txt.delete(0,tkinter.END)
+        if os.path.isfile("resource/config/config.DAT")==True:
+            with open("resource/config/config.DAT", 'rb') as f:
+                intf = pickle.load(f)
+            if intf==True:
+                txt.delete(0,tkinter.END)
         return "break"
     
     def dcall(event):
@@ -67,14 +72,28 @@ try:
         thread1 = threading.Thread(target=vf,args=(event,))
         thread1.start()
         return "break"
-        
+
+    def check1(event):
+        global bln1
+        with open("resource/config/config.DAT","wb") as web:
+            pickle.dump(bln1.get(),web)
+    if os.path.isfile("resource/config/config.DAT")==True:
+        with open("resource/config/config.DAT", 'rb') as f:
+            intf = pickle.load(f)
+    else:
+        intf=False
+
+    
     root = tkinter.Tk()
     root.resizable(False, False)
-    root['bg'] = 'grey'
+    root['bg'] = copy.copy(back)
     root.iconbitmap(default="resource/icon/ifs.ico")
     Static1 = tkinter.Label(text=u' ', background='grey')
     Static4 = tkinter.Label(text=u' ', background='grey')
-
+    
+    bln1=tkinter.BooleanVar()
+    bln1.set(intf)
+    
     root.title(u"Simple Base browser (portable)")
     root.geometry("400x350")
 
@@ -115,7 +134,17 @@ try:
     combo["values"] = ("キーワード検索","指定のURLへ移動")
     combo.current(0)
     combo.pack()
+    
+    Static8 = tkinter.Label(text=u' ', background=back)
+    Static8.pack()
 
+    CheckBox2 = tkinter.Checkbutton(root,variable=bln1,text=u"検索後に検索欄をクリアする",foreground=cor,background=back)
+    CheckBox2.pack()
+    
+    Button4 = tkinter.Button(text=u'設定を記憶する',font=("",9))
+    
+    Button4.bind("<Button-1>",check1)
+    Button4.pack()
     Static7 = tkinter.Label(text=u' ', background=back)
     Static7.pack()
 
