@@ -95,7 +95,7 @@ try:
     bln1.set(intf)
     
     root.title(u"Simple Base browser (portable)")
-    root.geometry("400x350")
+    root.geometry("400x360")
 
     fontStyle = tkFont.Font(family="Meiryo", size=20)
 
