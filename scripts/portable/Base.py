@@ -40,7 +40,6 @@ try:
         ret=messagebox.askyesno("Simple Base browser", "このプログラムを終了しますか?")
         if ret==True:
             root.destroy()
-            s=1
             sys.exit(1)
         else:
             return "break"
@@ -60,7 +59,7 @@ try:
             else:
                 web="https://"+txt.get()
         webbrowser.open_new(web)
-        txt.delete(0,kinter.END)
+        txt.delete(0,tkinter.END)
         return "break"
     
     def dcall(event):
@@ -124,8 +123,10 @@ try:
     Button3.bind("<Button-1>",exitf)
     Button3.pack()
     root.mainloop()
+
 except SystemExit:
     pass
+
 except:
     with open('error.log', 'a') as fs:
         traceback.print_exc(file=fs)
