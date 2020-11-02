@@ -37,7 +37,7 @@ try:
     def vf(event):
         global txt
         global combo
-        with open("./url.DAT", 'rb') as f:
+        with open("resource/url.DAT", 'rb') as f:
             url = pickle.load(f)
         if txt.get()=="":
             return "break"
@@ -55,7 +55,7 @@ try:
     root = tkinter.Tk()
     root.resizable(False, False)
     root['bg'] = 'grey'
-    root.iconbitmap(default="./ifs.ico")
+    root.iconbitmap(default="resource/ifs.ico")
     Static1 = tkinter.Label(text=u' ', background='grey')
     Static4 = tkinter.Label(text=u' ', background='grey')
 
