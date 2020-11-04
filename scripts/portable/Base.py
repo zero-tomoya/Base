@@ -11,7 +11,7 @@ import traceback
 import threading
 import tkinter.font as tkFont
 import configparser
-
+import datetime
 # this Softwere Defalut browser is keyword search 
 
 s=0
@@ -60,6 +60,11 @@ try:
             else:
                 web="https://"+txt.get()
         webbrowser.open_new(web)
+        date = datetime.datetime.now()
+        data=str(date.year)+"/"+str(date.month)+"/"+str(date.day)+" "+str(date.hour)+":"+str(date.minute)
+        with open('resource/dat/search.log','a') as fjk:
+            fjk.write("\n"+data+" "+web)
+
         if os.path.isfile("resource/config/config.DAT")==True:
             with open("resource/config/config.DAT", 'rb') as f:
                 intf = pickle.load(f)
