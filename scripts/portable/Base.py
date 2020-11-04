@@ -64,7 +64,6 @@ try:
         data=str(date.year)+"/"+str(date.month)+"/"+str(date.day)+" "+str(date.hour)+":"+str(date.minute)
         with open('resource/dat/search.log','a') as fjk:
             fjk.write("\n"+data+" "+web)
-
         if os.path.isfile("resource/config/config.DAT")==True:
             with open("resource/config/config.DAT", 'rb') as f:
                 intf = pickle.load(f)
@@ -128,9 +127,7 @@ try:
 
     Static5 = tkinter.Label(text=u' ', background=back)
     Static5.pack()
-#background
 
-#foreground
     Static6 = tkinter.Label(text=u'モード切替',foreground=cor,background=back)
     Static6.pack()
 
