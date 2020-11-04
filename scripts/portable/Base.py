@@ -124,7 +124,7 @@ try:
     Button5 = tkinter.Button(text=u'検索',font=("",10))
     Button5.bind("<Button-1>",dcall)
     Button5.pack()
-
+    root.bind('<Return>', dcall)
     Static5 = tkinter.Label(text=u' ', background=back)
     Static5.pack()
 
