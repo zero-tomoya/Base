@@ -1,4 +1,4 @@
-# dec2
+# Simple Base Browser
 
 Simple Base Browserはシンプルな簡易検索キーワードブラウザです。
 （このソフトウェアはデフォルトブラウザを必要とします)
